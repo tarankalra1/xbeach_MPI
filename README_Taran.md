@@ -1,9 +1,10 @@
 Xbeach
-svn clone xbeach repository path
+aa) svn clone xbeach repository path
 
-./autogen.sh
-./configure --prefix=/usr/include
-make
+1) ./autogen.sh
+2) ./configure 
+3) --prefix=/usr/include
+4) make
 
 Path to run
 /home/tarandeepk/Desktop/Xbeach_2/trunk/src/xbeach
