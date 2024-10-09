@@ -1,0 +1,923 @@
+  **********************************************************
+                     Welcome to XBeach
+ 
+  version 1.24.6057-Halloween
+               date2023/10/30 17:54:23
+     URL:https://svn.oss.deltares.nl/repos/xbeach/tags/2023-10-31-XBeach-v1.24.6
+ 057-Halloween_BETA/src/xbeachlibrary
+  **********************************************************
+ 
+  Simulation started: YYYYMMDD    hh:mm:ss     time zone (UTC)
+                      20240907  18:18:32     -0400
+ 
+  General Input Module
+  Reading input parameters:
+   XBeach reading fromparams.txt
+  --------------------------------
+  Backward compatibility:
+                      nonh =1
+                    instat =jons
+  --------------------------------
+  Physical processes:
+                 wavemodel =nonh
+                    cyclic =0 (no record found, default value used)
+                     swave =0
+                     lwave =1 (no record found, default value used)
+                      flow =1 (no record found, default value used)
+                  sedtrans =0
+                morphology =0
+               avalanching =0 (no record found, default value used)
+                    gwflow =0 (no record found, default value used)
+                     ships =0 (no record found, default value used)
+                vegetation =0 (no record found, default value used)
+                  setbathy =0 (no record found, default value used)
+                 viscosity =1 (no record found, default value used)
+                 advection =1 (no record found, default value used)
+                      wind =0 (no record found, default value used)
+  --------------------------------
+  Grid parameters:
+                  gridform =xbeach (no record found, default value used)
+                      xori =.0000 (no record found, default value used)
+                      yori =.0000 (no record found, default value used)
+                      alfa =.0000 (no record found, default value used)
+                        nx =1183
+                        ny =0
+                    posdwn =-1.0000
+                   depfile =profile.dep
+                     vardx =1
+                        dx =-1.0000 (no record found, default value used)
+                        dy =-1.0000 (no record found, default value used)
+                     xfile =x.grd
+                     yfile = None specified
+                        nz =1 (no record found, default value used)
+  --------------------------------
+  Model time parameters:
+                       CFL =.7000
+                     dtset =.0000 (no record found, default value used)
+                     tstop =14400.0000
+                  maxdtfac =500.0000 (no record found, default value used)
+  --------------------------------
+  Physical constants:
+                       rho =1025.0000 (no record found, default value used)
+                         g =9.8100 (no record found, default value used)
+                depthscale =1.0000 (no record found, default value used)
+  --------------------------------
+  Initial conditions:
+                zsinitfile = None specified
+  --------------------------------
+  Wave boundary condition parameters:
+                   wbctype =parametric
+                    bcfile =jonswap_1.txt
+                     taper =3600.0000 Warning: value > recommended value of1000.
+ 0000
+                      nmax =.8000 (no record found, default value used)
+               lateralwave =neumann (no record found, default value used)
+  --------------------------------
+  Wave-spectrum boundary condition parameters:
+                    random =1 (no record found, default value used)
+                   fcutoff =.0000 (no record found, default value used)
+                   trepfac =.0100 (no record found, default value used)
+                   sprdthr =.0000 (no record found, default value used)
+                Tm01switch =0 (no record found, default value used)
+                        rt =3600.0000 (no record found, default value used)
+                      dtbc =1.0000 (no record found, default value used)
+              nspectrumloc =1 (no record found, default value used)
+             wbcEvarreduce =.3000 (no record found, default value used)
+  --------------------------------
+  Flow boundary condition parameters:
+                     front =nonh_1d
+                      left =neumann (no record found, default value used)
+                     right =neumann (no record found, default value used)
+                      back =abs_1d
+                       ARC =1 (no record found, default value used)
+                     order =2.0000 (no record found, default value used)
+                  highcomp =0 (no record found, default value used)
+                  freewave =0 (no record found, default value used)
+                      epsi =-1.0000
+                  tidetype =velocity (no record found, default value used)
+  --------------------------------
+  Tide boundary conditions:
+                   tideloc =0 (no record found, default value used)
+                       zs0 =1.0000
+  --------------------------------
+  Discharge boundary conditions:
+            disch_loc_file = None specified
+     disch_timeseries_file = None specified
+                ndischarge =0 (no record found, default value used)
+               ntdischarge =0 (no record found, default value used)
+                      beta =.0800 (no record found, default value used)
+  --------------------------------
+  Flow parameters:
+               bedfriction =cf
+               bedfricfile =fric.txt
+  Warning: bed friction coefficient values from file 'fric.txt' will be used in 
+ computation
+                     maxcf =.0400 (no record found, default value used)
+                     mincf =.0000 (no record found, default value used)
+                       nuh =.1000 (no record found, default value used)
+                    nuhfac =.0000 (no record found, default value used)
+                      smag =1 (no record found, default value used)
+  --------------------------------
+  Coriolis force parameters:
+                    wearth =.0417 (no record found, default value used)
+                       lat =.0000 (no record found, default value used)
+  --------------------------------
+  Non-hydrostatic correction parameters:
+                    solver =tridiag (no record found, default value used)
+                     kdmin =.0000 (no record found, default value used)
+                      Topt =10.0000 (no record found, default value used)
+                   nonhq3d =1
+                 nhbreaker =1 (no record found, default value used)
+                     nhlay =.3300 (no record found, default value used)
+              breakviscfac =1.5000 (no record found, default value used)
+                maxbrsteep =.4000
+               reformsteep =.1000 (no record found, default value used)
+  --------------------------------
+  Bed composition parameters:
+                       ngd =1 (no record found, default value used)
+                        nd =3 (no record found, default value used)
+                       por =.4000 (no record found, default value used)
+   D50 =.0002 (no record found, default value used)
+   D90 =.0003 (no record found, default value used)
+  --------------------------------
+  Output variables:
+                   timings =1 (no record found, default value used)
+                    tunits = None specified
+                    tstart =3600.0000
+                      tint =900.0000 (no record found, default value used)
+                  tsglobal = None specified
+                     tintg =900.0000 (no record found, default value used)
+                  tspoints = None specified
+                     tintp =.4000
+                    tsmean = None specified
+                     tintm =1800.0000
+                nglobalvar =-1
+                   npoints =0
+                  nrugauge =0 (no record found, default value used)
+                 npointvar =0
+                 nrugdepth =1 (no record found, default value used)
+   rugdepth =.0000 (no record found, default value used)
+                  nmeanvar =0
+              outputformat =netcdf
+           outputprecision =double (no record found, default value used)
+                ncfilename = None specified
+  netcdf output to:xboutput.nc
+              remdryoutput =1 (no record found, default value used)
+  --------------------------------
+  Output projection:
+                projection = None specified
+                    rotate =1 (no record found, default value used)
+  --------------------------------
+  Wave numerics parameters:
+                    scheme =warmbeam (no record found, default value used)
+                    snells =1 (no record found, default value used)
+  --------------------------------
+  Flow numerics parameters:
+                       eps =.0050 (no record found, default value used)
+                    eps_sd =.5000 (no record found, default value used)
+                      umin =.0000 (no record found, default value used)
+                  secorder =1 (no record found, default value used)
+  --------------------------------
+  Finished reading input parameters
+  --------------------------------
+   Unknown, unused or multiple statements of parameterGAMMAX inparams.txt
+  ------------------------------------
+  Building Grid and Bathymetry
+  ------------------------------------
+  Initializing .....
+  --------------------------------
+  Initializing spectral wave boundary conditions
+  --------------------------------
+  NetCDF outputformat
+   Creating netcdf variable:H
+   Creating netcdf variable:zs
+   Creating netcdf variable:zs0
+   Creating netcdf variable:zb
+   Creating netcdf variable:hh
+   Creating netcdf variable:u
+   Creating netcdf variable:v
+   Creating netcdf variable:ue
+   Creating netcdf variable:ve
+   Creating netcdf variable:urms
+   Creating netcdf variable:Fx
+   Creating netcdf variable:Fy
+   Creating netcdf variable:ccg
+   Creating netcdf variable:ceqsg
+   Creating netcdf variable:ceqbg
+   Creating netcdf variable:Susg
+   Creating netcdf variable:Svsg
+   Creating netcdf variable:E
+   Creating netcdf variable:R
+   Creating netcdf variable:D
+   Creating netcdf variable:DR
+  Writing file definition.
+  Setting up boundary conditions
+  --------------------------------
+  Calculating spectral wave boundary conditions
+  --------------------------------
+  Reading spectrum at location1
+   waveparams: Reading from:jonswap_1.txt ...
+   XBeach reading fromjonswap_1.txt
+                    nmodal =1 (no record found, default value used)
+                       Hm0 =.6528
+                        fp =.1227
+                  gammajsp =3.3000
+                         s =20.0000
+   tma =0 (no record found, default value used)
+                   mainang =49.9837
+                      fnyq =1.0000
+                       dfj =.0050 (no record found, default value used)
+  Interpreting spectrum at location1
+  Values calculated from interpolated spectrum:
+  Hm0       =.65 m
+  Trep      =7.45 s
+  Mean dir  =50.44 degN
+  Overall Trep from all spectra calculated:7.45 s
+  Calculating Fourier components
+  5.0% done
+  10.0% done
+  15.0% done
+  20.0% done
+  25.0% done
+  30.0% done
+  35.0% done
+  40.0% done
+  45.0% done
+  50.0% done
+  55.0% done
+  60.0% done
+  65.0% done
+  70.0% done
+  75.0% done
+  80.0% done
+  85.0% done
+  90.0% done
+  95.0% done
+  100.0% done
+  Wave energy outside computational domain at offshore boundary:.0%
+  Calculating short wave elevation time series
+  5.0% done
+  10.0% done
+  15.0% done
+  20.0% done
+  25.0% done
+  30.0% done
+  35.0% done
+  40.0% done
+  45.0% done
+  50.0% done
+  55.0% done
+  60.0% done
+  65.0% done
+  70.0% done
+  75.0% done
+  80.0% done
+  85.0% done
+  90.0% done
+  95.0% done
+  100.0% done
+  Calculating short wave velocity time series
+  5.0% done
+  10.0% done
+  15.0% done
+  20.0% done
+  25.0% done
+  30.0% done
+  35.0% done
+  40.0% done
+  45.0% done
+  50.0% done
+  55.0% done
+  60.0% done
+  65.0% done
+  70.0% done
+  75.0% done
+  80.0% done
+  85.0% done
+  90.0% done
+  95.0% done
+  100.0% done
+  Calculating primary wave interaction
+  1.7% done
+  3.2% done
+  5.0% done
+  6.8% done
+  8.7% done
+  10.5% done
+  12.4% done
+  14.2% done
+  16.1% done
+  17.9% done
+  19.7% done
+  21.6% done
+  23.4% done
+  25.3% done
+  27.2% done
+  29.1% done
+  31.0% done
+  32.9% done
+  34.8% done
+  36.7% done
+  38.5% done
+  40.4% done
+  42.2% done
+  44.2% done
+  46.1% done
+  48.0% done
+  49.9% done
+  51.8% done
+  53.8% done
+  55.7% done
+  57.6% done
+  59.5% done
+  61.5% done
+  63.4% done
+  65.3% done
+  67.2% done
+  69.1% done
+  71.1% done
+  73.0% done
+  75.0% done
+  77.0% done
+  78.9% done
+  80.8% done
+  82.8% done
+  84.8% done
+  86.7% done
+  88.7% done
+  90.7% done
+  92.7% done
+  94.7% done
+  96.7% done
+  98.7% done
+  Warning: shallow water so long wave variance is reduced using par%nmax
+  Calculating flux at boundary
+  100.0% done
+   Writing short wave time series tonh_reuse.bcf
+  --------------------------------
+  Spectral wave boundary conditions complete
+  --------------------------------
+  Boundary conditions complete, starting computation
+  Simulation  0.0 percent complete. Average dt  0.009 seconds
+  Time remaining326 hours and 53 minutes
+  Simulation  0.4 percent complete. Average dt  0.009 seconds
+  Time remaining  5 hours and  2 minutes
+  Simulation  0.7 percent complete. Average dt  0.009 seconds
+  Time remaining  2 hours and 38 minutes
+  Simulation  1.1 percent complete. Average dt  0.009 seconds
+  Time remaining  1 hours and 52 minutes
+  Simulation  1.5 percent complete. Average dt  0.009 seconds
+  Time remaining  1 hours and 29 minutes
+  Simulation  1.8 percent complete. Average dt  0.009 seconds
+  Time remaining  1 hours and 15 minutes
+  Simulation  2.2 percent complete. Average dt  0.009 seconds
+  Time remaining  1 hours and  6 minutes
+  Simulation  2.5 percent complete. Average dt  0.009 seconds
+  Time remaining 59 minutes
+  Simulation  2.9 percent complete. Average dt  0.009 seconds
+  Time remaining 55 minutes
+  Simulation  3.3 percent complete. Average dt  0.009 seconds
+  Time remaining 51 minutes
+  Simulation  3.6 percent complete. Average dt  0.009 seconds
+  Time remaining 47 minutes
+  Simulation  4.0 percent complete. Average dt  0.009 seconds
+  Time remaining 45 minutes
+  Simulation  4.3 percent complete. Average dt  0.009 seconds
+  Time remaining 44 minutes
+  Simulation  4.7 percent complete. Average dt  0.009 seconds
+  Time remaining 41 minutes
+  Simulation  5.1 percent complete. Average dt  0.009 seconds
+  Time remaining 40 minutes
+  Simulation  5.4 percent complete. Average dt  0.009 seconds
+  Time remaining 39 minutes
+  Simulation  5.8 percent complete. Average dt  0.009 seconds
+  Time remaining 37 minutes
+  Simulation  6.1 percent complete. Average dt  0.009 seconds
+  Time remaining 36 minutes
+  Simulation  6.5 percent complete. Average dt  0.009 seconds
+  Time remaining 35 minutes
+  Simulation  6.9 percent complete. Average dt  0.009 seconds
+  Time remaining 34 minutes
+  Simulation  7.2 percent complete. Average dt  0.009 seconds
+  Time remaining 33 minutes
+  Simulation  7.6 percent complete. Average dt  0.009 seconds
+  Time remaining 33 minutes
+  Simulation  7.9 percent complete. Average dt  0.009 seconds
+  Time remaining 32 minutes
+  Simulation  8.3 percent complete. Average dt  0.009 seconds
+  Time remaining 31 minutes
+  Simulation  8.7 percent complete. Average dt  0.009 seconds
+  Time remaining 31 minutes
+  Simulation  9.0 percent complete. Average dt  0.009 seconds
+  Time remaining 30 minutes
+  Simulation  9.4 percent complete. Average dt  0.009 seconds
+  Time remaining 30 minutes
+  Simulation  9.8 percent complete. Average dt  0.009 seconds
+  Time remaining 29 minutes
+  Simulation 10.1 percent complete. Average dt  0.009 seconds
+  Time remaining 29 minutes
+  Simulation 10.5 percent complete. Average dt  0.009 seconds
+  Time remaining 29 minutes
+  Simulation 10.8 percent complete. Average dt  0.009 seconds
+  Time remaining 28 minutes
+  Simulation 11.2 percent complete. Average dt  0.009 seconds
+  Time remaining 28 minutes
+  Simulation 11.6 percent complete. Average dt  0.009 seconds
+  Time remaining 28 minutes
+  Simulation 11.9 percent complete. Average dt  0.009 seconds
+  Time remaining 27 minutes
+  Simulation 12.3 percent complete. Average dt  0.009 seconds
+  Time remaining 27 minutes
+  Simulation 12.6 percent complete. Average dt  0.009 seconds
+  Time remaining 26 minutes
+  Simulation 13.0 percent complete. Average dt  0.009 seconds
+  Time remaining 26 minutes
+  Simulation 13.4 percent complete. Average dt  0.009 seconds
+  Time remaining 26 minutes
+  Simulation 13.7 percent complete. Average dt  0.009 seconds
+  Time remaining 25 minutes
+  Simulation 14.1 percent complete. Average dt  0.009 seconds
+  Time remaining 25 minutes
+  Simulation 14.5 percent complete. Average dt  0.009 seconds
+  Time remaining 25 minutes
+  Simulation 14.8 percent complete. Average dt  0.009 seconds
+  Time remaining 25 minutes
+  Simulation 15.2 percent complete. Average dt  0.009 seconds
+  Time remaining 24 minutes
+  Simulation 15.5 percent complete. Average dt  0.009 seconds
+  Time remaining 24 minutes
+  Simulation 15.9 percent complete. Average dt  0.009 seconds
+  Time remaining 24 minutes
+  Simulation 16.3 percent complete. Average dt  0.009 seconds
+  Time remaining 24 minutes
+  Simulation 16.6 percent complete. Average dt  0.009 seconds
+  Time remaining 24 minutes
+  Simulation 17.0 percent complete. Average dt  0.009 seconds
+  Time remaining 23 minutes
+  Simulation 17.3 percent complete. Average dt  0.009 seconds
+  Time remaining 23 minutes
+  Simulation 17.7 percent complete. Average dt  0.009 seconds
+  Time remaining 23 minutes
+  Simulation 18.1 percent complete. Average dt  0.009 seconds
+  Time remaining 23 minutes
+  Simulation 18.4 percent complete. Average dt  0.009 seconds
+  Time remaining 23 minutes
+  Simulation 18.8 percent complete. Average dt  0.009 seconds
+  Time remaining 23 minutes
+  Simulation 19.2 percent complete. Average dt  0.009 seconds
+  Time remaining 22 minutes
+  Simulation 19.5 percent complete. Average dt  0.009 seconds
+  Time remaining 22 minutes
+  Simulation 19.9 percent complete. Average dt  0.009 seconds
+  Time remaining 22 minutes
+  Simulation 20.2 percent complete. Average dt  0.009 seconds
+  Time remaining 22 minutes
+  Simulation 20.6 percent complete. Average dt  0.009 seconds
+  Time remaining 22 minutes
+  Simulation 20.9 percent complete. Average dt  0.009 seconds
+  Time remaining 22 minutes
+  Simulation 21.3 percent complete. Average dt  0.009 seconds
+  Time remaining 21 minutes
+  Simulation 21.7 percent complete. Average dt  0.009 seconds
+  Time remaining 21 minutes
+  Simulation 22.0 percent complete. Average dt  0.009 seconds
+  Time remaining 21 minutes
+  Simulation 22.4 percent complete. Average dt  0.009 seconds
+  Time remaining 21 minutes
+  Simulation 22.8 percent complete. Average dt  0.009 seconds
+  Time remaining 20 minutes
+  Simulation 23.1 percent complete. Average dt  0.009 seconds
+  Time remaining 20 minutes
+  Simulation 23.5 percent complete. Average dt  0.009 seconds
+  Time remaining 20 minutes
+  Simulation 23.9 percent complete. Average dt  0.009 seconds
+  Time remaining 20 minutes
+  Simulation 24.2 percent complete. Average dt  0.009 seconds
+  Time remaining 20 minutes
+  Simulation 24.6 percent complete. Average dt  0.009 seconds
+  Time remaining 20 minutes
+  Simulation 24.9 percent complete. Average dt  0.009 seconds
+  Time remaining 20 minutes
+  Simulation 25.2 percent complete. Average dt  0.009 seconds
+  Time remaining 21 minutes
+  Simulation 25.6 percent complete. Average dt  0.009 seconds
+  Time remaining 20 minutes
+  Simulation 25.9 percent complete. Average dt  0.009 seconds
+  Time remaining 19 minutes
+  Simulation 26.3 percent complete. Average dt  0.009 seconds
+  Time remaining 19 minutes
+  Simulation 26.7 percent complete. Average dt  0.009 seconds
+  Time remaining 19 minutes
+  Simulation 27.0 percent complete. Average dt  0.009 seconds
+  Time remaining 19 minutes
+  Simulation 27.4 percent complete. Average dt  0.009 seconds
+  Time remaining 19 minutes
+  Simulation 27.7 percent complete. Average dt  0.009 seconds
+  Time remaining 19 minutes
+  Simulation 28.1 percent complete. Average dt  0.009 seconds
+  Time remaining 19 minutes
+  Simulation 28.5 percent complete. Average dt  0.009 seconds
+  Time remaining 18 minutes
+  Simulation 28.8 percent complete. Average dt  0.009 seconds
+  Time remaining 18 minutes
+  Simulation 29.2 percent complete. Average dt  0.009 seconds
+  Time remaining 19 minutes
+  Simulation 29.5 percent complete. Average dt  0.009 seconds
+  Time remaining 18 minutes
+  Simulation 29.9 percent complete. Average dt  0.009 seconds
+  Time remaining 18 minutes
+  Simulation 30.2 percent complete. Average dt  0.009 seconds
+  Time remaining 18 minutes
+  Simulation 30.6 percent complete. Average dt  0.009 seconds
+  Time remaining 18 minutes
+  Simulation 31.0 percent complete. Average dt  0.009 seconds
+  Time remaining 18 minutes
+  Simulation 31.3 percent complete. Average dt  0.009 seconds
+  Time remaining 18 minutes
+  Simulation 31.7 percent complete. Average dt  0.009 seconds
+  Time remaining 18 minutes
+  Simulation 32.0 percent complete. Average dt  0.009 seconds
+  Time remaining 18 minutes
+  Simulation 32.4 percent complete. Average dt  0.009 seconds
+  Time remaining 17 minutes
+  Simulation 32.7 percent complete. Average dt  0.009 seconds
+  Time remaining 17 minutes
+  Simulation 33.1 percent complete. Average dt  0.009 seconds
+  Time remaining 17 minutes
+  Simulation 33.5 percent complete. Average dt  0.009 seconds
+  Time remaining 17 minutes
+  Simulation 33.8 percent complete. Average dt  0.009 seconds
+  Time remaining 17 minutes
+  Simulation 34.2 percent complete. Average dt  0.009 seconds
+  Time remaining 17 minutes
+  Simulation 34.5 percent complete. Average dt  0.009 seconds
+  Time remaining 17 minutes
+  Simulation 34.9 percent complete. Average dt  0.009 seconds
+  Time remaining 17 minutes
+  Simulation 35.2 percent complete. Average dt  0.009 seconds
+  Time remaining 16 minutes
+  Simulation 35.6 percent complete. Average dt  0.009 seconds
+  Time remaining 16 minutes
+  Simulation 36.0 percent complete. Average dt  0.009 seconds
+  Time remaining 16 minutes
+  Simulation 36.3 percent complete. Average dt  0.009 seconds
+  Time remaining 16 minutes
+  Simulation 36.7 percent complete. Average dt  0.009 seconds
+  Time remaining 16 minutes
+  Simulation 37.0 percent complete. Average dt  0.009 seconds
+  Time remaining 16 minutes
+  Simulation 37.4 percent complete. Average dt  0.009 seconds
+  Time remaining 16 minutes
+  Simulation 37.8 percent complete. Average dt  0.009 seconds
+  Time remaining 16 minutes
+  Simulation 38.1 percent complete. Average dt  0.009 seconds
+  Time remaining 16 minutes
+  Simulation 38.5 percent complete. Average dt  0.009 seconds
+  Time remaining 15 minutes
+  Simulation 38.8 percent complete. Average dt  0.009 seconds
+  Time remaining 15 minutes
+  Simulation 39.2 percent complete. Average dt  0.009 seconds
+  Time remaining 15 minutes
+  Simulation 39.6 percent complete. Average dt  0.009 seconds
+  Time remaining 15 minutes
+  Simulation 39.9 percent complete. Average dt  0.009 seconds
+  Time remaining 15 minutes
+  Simulation 40.3 percent complete. Average dt  0.009 seconds
+  Time remaining 15 minutes
+  Simulation 40.6 percent complete. Average dt  0.009 seconds
+  Time remaining 15 minutes
+  Simulation 41.0 percent complete. Average dt  0.009 seconds
+  Time remaining 15 minutes
+  Simulation 41.4 percent complete. Average dt  0.009 seconds
+  Time remaining 15 minutes
+  Simulation 41.7 percent complete. Average dt  0.009 seconds
+  Time remaining 14 minutes
+  Simulation 42.1 percent complete. Average dt  0.009 seconds
+  Time remaining 14 minutes
+  Simulation 42.4 percent complete. Average dt  0.009 seconds
+  Time remaining 14 minutes
+  Simulation 42.8 percent complete. Average dt  0.009 seconds
+  Time remaining 14 minutes
+  Simulation 43.2 percent complete. Average dt  0.009 seconds
+  Time remaining 14 minutes
+  Simulation 43.5 percent complete. Average dt  0.009 seconds
+  Time remaining 14 minutes
+  Simulation 43.9 percent complete. Average dt  0.009 seconds
+  Time remaining 14 minutes
+  Simulation 44.2 percent complete. Average dt  0.009 seconds
+  Time remaining 14 minutes
+  Simulation 44.6 percent complete. Average dt  0.009 seconds
+  Time remaining 13 minutes
+  Simulation 45.0 percent complete. Average dt  0.009 seconds
+  Time remaining 13 minutes
+  Simulation 45.3 percent complete. Average dt  0.009 seconds
+  Time remaining 13 minutes
+  Simulation 45.7 percent complete. Average dt  0.009 seconds
+  Time remaining 13 minutes
+  Simulation 46.0 percent complete. Average dt  0.009 seconds
+  Time remaining 13 minutes
+  Simulation 46.4 percent complete. Average dt  0.009 seconds
+  Time remaining 13 minutes
+  Simulation 46.8 percent complete. Average dt  0.009 seconds
+  Time remaining 13 minutes
+  Simulation 47.1 percent complete. Average dt  0.009 seconds
+  Time remaining 13 minutes
+  Simulation 47.5 percent complete. Average dt  0.009 seconds
+  Time remaining 13 minutes
+  Simulation 47.8 percent complete. Average dt  0.009 seconds
+  Time remaining 13 minutes
+  Simulation 48.2 percent complete. Average dt  0.009 seconds
+  Time remaining 13 minutes
+  Simulation 48.6 percent complete. Average dt  0.009 seconds
+  Time remaining 12 minutes
+  Simulation 48.9 percent complete. Average dt  0.009 seconds
+  Time remaining 12 minutes
+  Simulation 49.3 percent complete. Average dt  0.009 seconds
+  Time remaining 12 minutes
+  Simulation 49.7 percent complete. Average dt  0.009 seconds
+  Time remaining 12 minutes
+  Simulation 50.0 percent complete. Average dt  0.009 seconds
+  Time remaining 12 minutes
+  Simulation 50.4 percent complete. Average dt  0.009 seconds
+  Time remaining 12 minutes
+  Simulation 50.7 percent complete. Average dt  0.009 seconds
+  Time remaining 12 minutes
+  Simulation 51.1 percent complete. Average dt  0.009 seconds
+  Time remaining 12 minutes
+  Simulation 51.4 percent complete. Average dt  0.009 seconds
+  Time remaining 12 minutes
+  Simulation 51.8 percent complete. Average dt  0.009 seconds
+  Time remaining 12 minutes
+  Simulation 52.2 percent complete. Average dt  0.009 seconds
+  Time remaining 11 minutes
+  Simulation 52.5 percent complete. Average dt  0.009 seconds
+  Time remaining 11 minutes
+  Simulation 52.9 percent complete. Average dt  0.009 seconds
+  Time remaining 11 minutes
+  Simulation 53.2 percent complete. Average dt  0.009 seconds
+  Time remaining 11 minutes
+  Simulation 53.6 percent complete. Average dt  0.009 seconds
+  Time remaining 11 minutes
+  Simulation 54.0 percent complete. Average dt  0.009 seconds
+  Time remaining 11 minutes
+  Simulation 54.3 percent complete. Average dt  0.009 seconds
+  Time remaining 11 minutes
+  Simulation 54.7 percent complete. Average dt  0.009 seconds
+  Time remaining 11 minutes
+  Simulation 55.0 percent complete. Average dt  0.009 seconds
+  Time remaining 11 minutes
+  Simulation 55.3 percent complete. Average dt  0.009 seconds
+  Time remaining 11 minutes
+  Simulation 55.7 percent complete. Average dt  0.009 seconds
+  Time remaining 11 minutes
+  Simulation 56.0 percent complete. Average dt  0.009 seconds
+  Time remaining 11 minutes
+  Simulation 56.4 percent complete. Average dt  0.009 seconds
+  Time remaining 11 minutes
+  Simulation 56.7 percent complete. Average dt  0.009 seconds
+  Time remaining 10 minutes
+  Simulation 57.1 percent complete. Average dt  0.009 seconds
+  Time remaining 10 minutes
+  Simulation 57.4 percent complete. Average dt  0.009 seconds
+  Time remaining 10 minutes
+  Simulation 57.8 percent complete. Average dt  0.009 seconds
+  Time remaining 10 minutes
+  Simulation 58.1 percent complete. Average dt  0.009 seconds
+  Time remaining 10 minutes
+  Simulation 58.5 percent complete. Average dt  0.009 seconds
+  Time remaining 10 minutes
+  Simulation 58.8 percent complete. Average dt  0.009 seconds
+  Time remaining 10 minutes
+  Simulation 59.2 percent complete. Average dt  0.009 seconds
+  Time remaining 10 minutes
+  Simulation 59.5 percent complete. Average dt  0.009 seconds
+  Time remaining 10 minutes
+  Simulation 59.9 percent complete. Average dt  0.009 seconds
+  Time remaining 10 minutes
+  Simulation 60.2 percent complete. Average dt  0.009 seconds
+  Time remaining  9 minutes and 59 seconds
+  Simulation 60.6 percent complete. Average dt  0.009 seconds
+  Time remaining  9 minutes and 46 seconds
+  Simulation 60.9 percent complete. Average dt  0.009 seconds
+  Time remaining  9 minutes and 38 seconds
+  Simulation 61.3 percent complete. Average dt  0.009 seconds
+  Time remaining  9 minutes and 36 seconds
+  Simulation 61.7 percent complete. Average dt  0.009 seconds
+  Time remaining  9 minutes and 29 seconds
+  Simulation 62.0 percent complete. Average dt  0.009 seconds
+  Time remaining  9 minutes and 23 seconds
+  Simulation 62.4 percent complete. Average dt  0.009 seconds
+  Time remaining  9 minutes and 24 seconds
+  Simulation 62.7 percent complete. Average dt  0.009 seconds
+  Time remaining  9 minutes and 19 seconds
+  Simulation 63.1 percent complete. Average dt  0.009 seconds
+  Time remaining  9 minutes and 12 seconds
+  Simulation 63.4 percent complete. Average dt  0.009 seconds
+  Time remaining  9 minutes and 10 seconds
+  Simulation 63.8 percent complete. Average dt  0.009 seconds
+  Time remaining  9 minutes and  2 seconds
+  Simulation 64.1 percent complete. Average dt  0.009 seconds
+  Time remaining  8 minutes and 53 seconds
+  Simulation 64.5 percent complete. Average dt  0.009 seconds
+  Time remaining  8 minutes and 48 seconds
+  Simulation 64.9 percent complete. Average dt  0.009 seconds
+  Time remaining  8 minutes and 42 seconds
+  Simulation 65.2 percent complete. Average dt  0.009 seconds
+  Time remaining  8 minutes and 34 seconds
+  Simulation 65.6 percent complete. Average dt  0.009 seconds
+  Time remaining  8 minutes and 27 seconds
+  Simulation 66.0 percent complete. Average dt  0.009 seconds
+  Time remaining  8 minutes and 22 seconds
+  Simulation 66.3 percent complete. Average dt  0.009 seconds
+  Time remaining  8 minutes and 17 seconds
+  Simulation 66.7 percent complete. Average dt  0.009 seconds
+  Time remaining  8 minutes and 10 seconds
+  Simulation 67.0 percent complete. Average dt  0.009 seconds
+  Time remaining  8 minutes and  5 seconds
+  Simulation 67.4 percent complete. Average dt  0.009 seconds
+  Time remaining  8 minutes and  3 seconds
+  Simulation 67.8 percent complete. Average dt  0.009 seconds
+  Time remaining  7 minutes and 56 seconds
+  Simulation 68.1 percent complete. Average dt  0.009 seconds
+  Time remaining  7 minutes and 55 seconds
+  Simulation 68.5 percent complete. Average dt  0.009 seconds
+  Time remaining  7 minutes and 44 seconds
+  Simulation 68.8 percent complete. Average dt  0.009 seconds
+  Time remaining  7 minutes and 38 seconds
+  Simulation 69.2 percent complete. Average dt  0.009 seconds
+  Time remaining  7 minutes and 37 seconds
+  Simulation 69.6 percent complete. Average dt  0.009 seconds
+  Time remaining  7 minutes and 31 seconds
+  Simulation 69.9 percent complete. Average dt  0.009 seconds
+  Time remaining  7 minutes and 26 seconds
+  Simulation 70.3 percent complete. Average dt  0.009 seconds
+  Time remaining  7 minutes and 20 seconds
+  Simulation 70.6 percent complete. Average dt  0.009 seconds
+  Time remaining  7 minutes and 12 seconds
+  Simulation 71.0 percent complete. Average dt  0.009 seconds
+  Time remaining  7 minutes and 14 seconds
+  Simulation 71.3 percent complete. Average dt  0.009 seconds
+  Time remaining  7 minutes and  6 seconds
+  Simulation 71.7 percent complete. Average dt  0.009 seconds
+  Time remaining  6 minutes and 58 seconds
+  Simulation 72.1 percent complete. Average dt  0.009 seconds
+  Time remaining  6 minutes and 53 seconds
+  Simulation 72.4 percent complete. Average dt  0.009 seconds
+  Time remaining  6 minutes and 48 seconds
+  Simulation 72.8 percent complete. Average dt  0.009 seconds
+  Time remaining  6 minutes and 38 seconds
+  Simulation 73.1 percent complete. Average dt  0.009 seconds
+  Time remaining  6 minutes and 34 seconds
+  Simulation 73.5 percent complete. Average dt  0.009 seconds
+  Time remaining  6 minutes and 31 seconds
+  Simulation 73.9 percent complete. Average dt  0.009 seconds
+  Time remaining  6 minutes and 25 seconds
+  Simulation 74.2 percent complete. Average dt  0.009 seconds
+  Time remaining  6 minutes and 17 seconds
+  Simulation 74.6 percent complete. Average dt  0.009 seconds
+  Time remaining  6 minutes and 12 seconds
+  Simulation 74.9 percent complete. Average dt  0.009 seconds
+  Time remaining  6 minutes and 10 seconds
+  Simulation 75.3 percent complete. Average dt  0.009 seconds
+  Time remaining  6 minutes and  8 seconds
+  Simulation 75.6 percent complete. Average dt  0.009 seconds
+  Time remaining  5 minutes and 60 seconds
+  Simulation 76.0 percent complete. Average dt  0.009 seconds
+  Time remaining  5 minutes and 53 seconds
+  Simulation 76.4 percent complete. Average dt  0.009 seconds
+  Time remaining  5 minutes and 45 seconds
+  Simulation 76.7 percent complete. Average dt  0.009 seconds
+  Time remaining  5 minutes and 42 seconds
+  Simulation 77.1 percent complete. Average dt  0.009 seconds
+  Time remaining  5 minutes and 36 seconds
+  Simulation 77.5 percent complete. Average dt  0.009 seconds
+  Time remaining  5 minutes and 29 seconds
+  Simulation 77.8 percent complete. Average dt  0.009 seconds
+  Time remaining  5 minutes and 26 seconds
+  Simulation 78.2 percent complete. Average dt  0.009 seconds
+  Time remaining  5 minutes and 20 seconds
+  Simulation 78.5 percent complete. Average dt  0.009 seconds
+  Time remaining  5 minutes and 16 seconds
+  Simulation 78.9 percent complete. Average dt  0.009 seconds
+  Time remaining  5 minutes and 10 seconds
+  Simulation 79.3 percent complete. Average dt  0.009 seconds
+  Time remaining  5 minutes and  2 seconds
+  Simulation 79.6 percent complete. Average dt  0.009 seconds
+  Time remaining  4 minutes and 57 seconds
+  Simulation 80.0 percent complete. Average dt  0.009 seconds
+  Time remaining  4 minutes and 51 seconds
+  Simulation 80.3 percent complete. Average dt  0.009 seconds
+  Time remaining  4 minutes and 48 seconds
+  Simulation 80.7 percent complete. Average dt  0.009 seconds
+  Time remaining  4 minutes and 42 seconds
+  Simulation 81.1 percent complete. Average dt  0.009 seconds
+  Time remaining  4 minutes and 40 seconds
+  Simulation 81.4 percent complete. Average dt  0.009 seconds
+  Time remaining  4 minutes and 32 seconds
+  Simulation 81.8 percent complete. Average dt  0.009 seconds
+  Time remaining  4 minutes and 25 seconds
+  Simulation 82.1 percent complete. Average dt  0.009 seconds
+  Time remaining  4 minutes and 22 seconds
+  Simulation 82.5 percent complete. Average dt  0.009 seconds
+  Time remaining  4 minutes and 22 seconds
+  Simulation 82.8 percent complete. Average dt  0.009 seconds
+  Time remaining  4 minutes and 11 seconds
+  Simulation 83.2 percent complete. Average dt  0.009 seconds
+  Time remaining  4 minutes and  5 seconds
+  Simulation 83.6 percent complete. Average dt  0.009 seconds
+  Time remaining  4 minutes and  1 seconds
+  Simulation 83.9 percent complete. Average dt  0.009 seconds
+  Time remaining  3 minutes and 56 seconds
+  Simulation 84.3 percent complete. Average dt  0.009 seconds
+  Time remaining  3 minutes and 52 seconds
+  Simulation 84.6 percent complete. Average dt  0.009 seconds
+  Time remaining  3 minutes and 45 seconds
+  Simulation 85.0 percent complete. Average dt  0.009 seconds
+  Time remaining  3 minutes and 44 seconds
+  Simulation 85.3 percent complete. Average dt  0.009 seconds
+  Time remaining  3 minutes and 34 seconds
+  Simulation 85.7 percent complete. Average dt  0.009 seconds
+  Time remaining  3 minutes and 28 seconds
+  Simulation 86.1 percent complete. Average dt  0.009 seconds
+  Time remaining  3 minutes and 22 seconds
+  Simulation 86.4 percent complete. Average dt  0.009 seconds
+  Time remaining  3 minutes and 17 seconds
+  Simulation 86.8 percent complete. Average dt  0.009 seconds
+  Time remaining  3 minutes and 12 seconds
+  Simulation 87.2 percent complete. Average dt  0.009 seconds
+  Time remaining  3 minutes and  7 seconds
+  Simulation 87.5 percent complete. Average dt  0.009 seconds
+  Time remaining  3 minutes and  2 seconds
+  Simulation 87.9 percent complete. Average dt  0.009 seconds
+  Time remaining  2 minutes and 58 seconds
+  Simulation 88.2 percent complete. Average dt  0.009 seconds
+  Time remaining  2 minutes and 51 seconds
+  Simulation 88.6 percent complete. Average dt  0.009 seconds
+  Time remaining  2 minutes and 47 seconds
+  Simulation 89.0 percent complete. Average dt  0.009 seconds
+  Time remaining  2 minutes and 41 seconds
+  Simulation 89.3 percent complete. Average dt  0.009 seconds
+  Time remaining  2 minutes and 35 seconds
+  Simulation 89.7 percent complete. Average dt  0.009 seconds
+  Time remaining  2 minutes and 31 seconds
+  Simulation 90.0 percent complete. Average dt  0.009 seconds
+  Time remaining  2 minutes and 24 seconds
+  Simulation 90.4 percent complete. Average dt  0.009 seconds
+  Time remaining  2 minutes and 20 seconds
+  Simulation 90.8 percent complete. Average dt  0.009 seconds
+  Time remaining  2 minutes and 15 seconds
+  Simulation 91.1 percent complete. Average dt  0.009 seconds
+  Time remaining  2 minutes and 10 seconds
+  Simulation 91.5 percent complete. Average dt  0.009 seconds
+  Time remaining  2 minutes and  4 seconds
+  Simulation 91.8 percent complete. Average dt  0.009 seconds
+  Time remaining  1 minutes and 59 seconds
+  Simulation 92.2 percent complete. Average dt  0.009 seconds
+  Time remaining  1 minutes and 53 seconds
+  Simulation 92.6 percent complete. Average dt  0.009 seconds
+  Time remaining  1 minutes and 48 seconds
+  Simulation 92.9 percent complete. Average dt  0.009 seconds
+  Time remaining  1 minutes and 42 seconds
+  Simulation 93.3 percent complete. Average dt  0.009 seconds
+  Time remaining  1 minutes and 38 seconds
+  Simulation 93.6 percent complete. Average dt  0.009 seconds
+  Time remaining  1 minutes and 33 seconds
+  Simulation 94.0 percent complete. Average dt  0.009 seconds
+  Time remaining  1 minutes and 28 seconds
+  Simulation 94.4 percent complete. Average dt  0.009 seconds
+  Time remaining  1 minutes and 22 seconds
+  Simulation 94.7 percent complete. Average dt  0.009 seconds
+  Time remaining  1 minutes and 18 seconds
+  Simulation 95.1 percent complete. Average dt  0.009 seconds
+  Time remaining  1 minutes and 11 seconds
+  Simulation 95.4 percent complete. Average dt  0.009 seconds
+  Time remaining  1 minutes and  6 seconds
+  Simulation 95.8 percent complete. Average dt  0.009 seconds
+  Time remaining  1 minutes and  1 seconds
+  Simulation 96.2 percent complete. Average dt  0.009 seconds
+  Time remaining 56 seconds
+  Simulation 96.5 percent complete. Average dt  0.009 seconds
+  Time remaining 50 seconds
+  Simulation 96.9 percent complete. Average dt  0.009 seconds
+  Time remaining 45 seconds
+  Simulation 97.2 percent complete. Average dt  0.009 seconds
+  Time remaining 40 seconds
+  Simulation 97.6 percent complete. Average dt  0.009 seconds
+  Time remaining 35 seconds
+  Simulation 98.0 percent complete. Average dt  0.009 seconds
+  Time remaining 29 seconds
+  Simulation 98.3 percent complete. Average dt  0.009 seconds
+  Time remaining 24 seconds
+  Simulation 98.7 percent complete. Average dt  0.009 seconds
+  Time remaining 19 seconds
+  Simulation 99.1 percent complete. Average dt  0.009 seconds
+  Time remaining 14 seconds
+  Simulation 99.4 percent complete. Average dt  0.009 seconds
+  Time remaining  9 seconds
+  Simulation 99.8 percent complete. Average dt  0.009 seconds
+  Time remaining  3 seconds
+   Duration   :   1510.01562500000       seconds
+   Timesteps  :     1614549
+   Average dt :  8.918899333498086E-003  seconds
+   Unit speed :  7.899116314391067E-007  seconds/1
+  End of program xbeach

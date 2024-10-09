@@ -1,0 +1,126 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% XBeach parameter settings input file                                     %%%
+%%%                                                                          %%%
+%%% date:     30-May-2014 12:53:50                                           %%%
+%%% function: xb_write_params                                                %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+bedfriction = cf
+bedfricfile = fric.txt
+sedtrans    = 0
+morphology  = 0
+gammax      = 2.0
+taper       = 3600.0
+nonh        = 1
+nonhq3d     = 1
+swave       = 0
+front       = nonh_1d
+back        = abs_1d
+maxbrsteep  = 0.4
+wavemodel   = nonh
+CFL 	    = 0.7
+
+%%% Flow boundary condition parameters %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+epsi         = -1
+
+%%% Grid parameters %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+nx       = 1183 
+ny       =  0 
+vardx    =  1    
+depfile  = profile.dep 
+xfile    = x.grd
+posdwn   = -1 
+
+
+%%% Model time %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+tstop        = 14400.0
+
+
+%%% Tide boundary conditions %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+zs0          = 1
+
+%%% Wave boundary condition parameters %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+instat       = reuse
+bcfile       = nhbcflist.bcf
+
+%%% Output variables %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+outputformat = netcdf
+tintm        = 1800.0
+tstart       = 3600.0
+tintp        = 0.4
+
+npoints = 53
+9.1735 1. offshore
+279.7251 1. beachtoe
+30.1148 1. reefcrest
+154.92 1. midflat
+537.3978 1. overtop
+NaN 1. rest2_offsh
+NaN 1. rest2_W5_onsh
+NaN 1. rest2_W10_onsh
+NaN 1. rest2_W25_onsh
+15.6774 1. rest1_W25_offsh
+16.3797 1. rest1_W10_offsh
+20.9289 1. rest1_W5_offsh
+26.4792 1. rest1_onsh
+30.8062 1. rest3_offsh
+37.0292 1. rest3_W5_onsh
+41.8693 1. rest3_W10_onsh
+56.7353 1. rest3_W25_onsh
+142.1283 1. rest4_W25_offsh
+149.3884 1. rest4_W10_offsh
+152.1542 1. rest4_W5_offsh
+158.0314 1. rest4_W5_onsh
+160.4515 1. rest4_W10_onsh
+168.0573 1. rest4_W25_onsh
+252.7589 1. rest5_W25_offsh
+267.9706 1. rest5_W10_offsh
+272.8107 1. rest5_W5_offsh
+278.688 1. rest5_onsh
+283.1733 1. rest5_plus5
+-0.59407  1. global1
+14.8697  1. global2
+19.1714  1. global3
+19.9634  1. global4
+21.4804  1. global5
+22.2043  1. global6
+22.9044  1. global7
+24.2307  1. global8
+25.4552  1. global9
+26.0279  1. global10
+27.0918  1. global11
+28.0439  1. global12
+71.947  1. global13
+113.4335  1. global14
+155.2657  1. global15
+196.7522  1. global16
+238.5844  1. global17
+28.0439  1. global18
+29.2543  1. global19
+285.3969  1. global20
+291.1682  1. global21
+297.2033  1. global22
+303.1602  1. global23
+309.3634  1. global24
+315.1596  1. global25
+
+npointvar = 2
+zs
+uu
+
+nglobalvar= 0
+
+nrugauge     =1
+279.7251 1.
+rugdepth     = 0.1
+
+nmeanvar = 3
+zs
+uu
+taubx

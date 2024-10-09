@@ -1,0 +1,2 @@
+export LD_LIBRARY_PATH="/opt/apps/xbeach/"$XBEACH_PROJECT_ID"_gcc_12.2.0_openmpi_4.1.5_HEAD/lib":$LD_LIBRARY_PATH
+export PATH="/opt/apps/xbeach/"$XBEACH_PROJECT_ID"_gcc_12.2.0_openmpi_4.1.5_HEAD/bin":$PATH

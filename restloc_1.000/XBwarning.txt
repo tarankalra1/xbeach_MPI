@@ -1,0 +1,8 @@
+ Warning: Specification of nonh using parameter 'wavemodel'
+ Warning: Specification of instat using parameter 'wbctype'
+                     taper =3600.0000 Warning: value > recommended value of1000.
+ 0000
+  Warning: bed friction coefficient values from file 'fric.txt' will be used in 
+ computation
+   Unknown, unused or multiple statements of parameterGAMMAX inparams.txt
+  Warning: shallow water so long wave variance is reduced using par%nmax

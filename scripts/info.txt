@@ -1,0 +1,6 @@
+There are two ways to create a executable from the generate.py
+1. 	using py2exe with the setup.py script (did not work 5-9-2019).
+2  	using pyinstaller. download pyinstaller (pip install pyinstaller). 
+	Run pyinstaller generate.py to create the executable.
+	The executable is created at dist/generate/* 
+	  

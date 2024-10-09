@@ -1,0 +1,71 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% XBeach parameter settings input file                                     %%%
+%%%                                                                          %%%
+%%% date:     30-May-2014 12:53:50                                           %%%
+%%% function: xb_write_params                                                %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+bedfriction = cf
+bedfricfile = fric.txt
+sedtrans    = 0
+morphology  = 0
+gammax      = 2.0
+taper       = 3600.0
+nonh        = 1
+nonhq3d     = 1
+swave       = 0
+front       = nonh_1d
+back        = abs_1d
+maxbrsteep  = 0.4
+wavemodel   = nonh
+CFL 	    = 0.7
+
+%%% Flow boundary condition parameters %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+epsi         = -1
+
+%%% Grid parameters %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+nx       = 1183 
+ny       =  0 
+vardx    =  1    
+depfile  = profile.dep 
+xfile    = x.grd
+posdwn   = -1 
+
+
+%%% Model time %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+tstop        = 14400.0
+
+
+%%% Tide boundary conditions %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+zs0          = 1
+
+%%% Wave boundary condition parameters %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+instat       = jons 
+bcfile       = jonswap_1.txt
+
+%%% Output variables %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+outputformat = netcdf
+tintm        = 1800.0
+tstart       = 3600.0
+tintp        = 0.4
+
+npoints = 0
+npointvar = 0 
+nmeanvar = 0
+
+nglobalvar   = -1
+hh
+H
+thetamean
+u
+v
+zs0
+zs
+vmag
+zb

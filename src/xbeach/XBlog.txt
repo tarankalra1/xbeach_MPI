@@ -1,0 +1,15 @@
+  **********************************************************
+                     Welcome to XBeach
+ 
+   version 1.24.6099M
+               dateWed Sep 18 03:10:30 PM EDT 2024
+     URL:URL: https://svn.oss.deltares.nl/repos/xbeach/trunk
+  **********************************************************
+ 
+  Simulation started: YYYYMMDD    hh:mm:ss     time zone (UTC)
+                      20240918  15:17:27     -0400
+ 
+    running in:/home/tarandeepk/Desktop/Xbeach_2/trunk/src/xbeach
+  General Input Module
+  Reading input parameters:
+   File 'params.txt' not found. Terminating simulation
