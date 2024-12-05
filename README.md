@@ -15,5 +15,5 @@ Path to run
 
 
 Step 2: Take a set of xbeach runs 
-
+- Example is restloc_1.000 in this repo
 - mpirun -np 2 ../xbeach
