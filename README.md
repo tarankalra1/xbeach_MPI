@@ -1,5 +1,6 @@
-Xbeach
-A) get this repository 
+Xbeach installed on a local Linux Box
+
+Step 1:  get this repository 
 
 1) ./autogen.sh
 2) ./configure 
@@ -13,5 +14,6 @@ Path to run
 ./configure --prefix=/usr/include CPPFLAGS="-I/usr/include" LDFLAFS="-L/usr/include" NETCDF_INCIDIR="/usr/include" NETCDF_LIBDIR="/usr/include" --with-netcdf --with-mpi
 
 
-Take a set of xbeach runs 
-B)  mpirun -np 2 ../xbeach
+Step 2: Take a set of xbeach runs 
+
+- mpirun -np 2 ../xbeach
